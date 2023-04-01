@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style..css">
+    <title>PIANO!</title>
+</head>
+<body>
+
+
+    <main class="main">
+
+<section class="piano">
+    <div class="top">
+        <div class="name">
+            <p>JAVASCRIPT PIANO</p>
+        </div>
+        <div class="volume">
+            <p>VOLUME</p>
+            <input type="range" name="range" id="volume-slider" class="volume-slider" min="0" max="100" step="1">
+        </div>
+    </div>
+
+    <div class="main-piano">
+        <div class="border"></div>
+        <div class="part-1" id="keys-block">
+            <button class="key-A"><div class="key-A" id="white">A</div></button>
+            <button class="key-W"><div class="black" id="black">W</div></button>
+            <button class="key-S"><div class="key-S" id="white">S</div></button>
+            <button class="key-E"><div class="black"  id="black">E</div></button>
+            <button class="key-D"><div class="key-D" id="white">D</div></button>
+        </div>
+        <div class="part-2" id="keys-block">
+            <button class="key-F"><div class="key-F" id="white">F</div></button>
+            <button class="key-T"><div class="black">T</div></button>
+            <button class="key-G"><div class="key-G" id="white">G</div></button>
+            <button class="key-Y"><div class="black">Y</div></button>
+            <button class="key-H"><div class="key-H" id="white">H</div></button>
+            <button class="key-U"><div class="black">U</div></button>
+            <button class="key-J"><div class="key-J" id="white">J</div></button>
+        </div>
+        <div class="part-3" id="keys-block">
+            <button class="key-K"><div class="key-K" id="white">K</div></button>
+            <button class="key-O"><div class="black">O</div></button>
+            <button class="key-L"><div class="key-L" id="white">L</div></button>
+            <button class="key-P"><div class="black">P</div></button>
+            <button class="key-last"><div class="key-last" id="white">;</div>
+            </button>
+        </div>
+        <div class="border"></div>
+    </div>
+
+    <div class="bottom-recorder">
+        <div class="record">
+            RECORD
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+    <script src="piano.js"></script>
+    
+</body>
+</html>
