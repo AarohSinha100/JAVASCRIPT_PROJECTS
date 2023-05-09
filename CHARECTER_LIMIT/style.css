@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    padding: 0 15px;
+}
+
+.input-box{
+    position: relative;
+    height: 160px;
+    max-width: 560px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.input-box textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    resize: none;
+    padding: 25px 15px;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+    caret-color: #007bff;
+}
+
+.input-box textarea:focus,
+.input-box textarea:valid{
+    border-color: #007bff;
+}
+
+.input-box textarea::placeholder{
+    opacity: 70%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-box .title{
+    position: absolute; /*relative to input box as it has posiiton of relative*/
+    top: 38px;
+    left: 45px;
+
+    color: #007bff;
+    font-weight: 500;
+
+}
+
+.input-box .charecters{
+    position: absolute;
+    bottom: 38px;
+    right: 45px;
+    font-weight: 500;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    opacity: 70%;
+    display: none;
+
+}
+
+.input-box.active .charecters{
+    display: block;
+}
+
+.input-box.error .charecters{
+    color: red;
+
+}
+.input-box.error textarea{
+    border-color: red;
+}
+.input-box.error .title{
+    color: red;
+}
