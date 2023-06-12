@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* 
+font-family: 'Quicksand', sans-serif; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: #e8edea;
+}
+
+.big_box{
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.image{
+    width: 400px;
+    height: 64.1vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form{
+    background-color: white;
+    width: 25vw;
+    height: 64.1vh;
+    max-height:  64.1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_form div{
+    width: 70%;
+}
+
+/* .login_form div:not(:first-child){
+   /* border: solid black;
+   margin: 2px;
+   height: 50px;
+}  */
+
+.login_form div:nth-child(2){
+    margin: 2px;
+    height: 65px;
+}
+
+.login_form div:nth-child(3){
+    margin: 2px;
+    height: 65px;
+}
+
+.login_form div:nth-child(4){
+    margin: 2px;
+    height: 65px;
+    /* background-color: red; */
+    
+}
+
+.login_form div:nth-child(5){
+    margin: 2px;
+    height: 50px;
+    height: 65px;
+    /* background-color: red; */
+}
+    
+
+/* .intro{
+    height: 80px;
+    /* background-color: antiquewhite; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size:40px;
+    
+} 
+*/
+
+.intro{
+    /* border: 3px solid black;  */
+    height: 100px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+.intro_title{
+    margin-top: 10px;
+    font-size: 55px;
+}
+.welcome{
+    font-size: 12px;
+}
+
+.username{
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+
+input{
+    width: 100%;
+    height: 30px;
+}
+.login_form div:not(:first-child) p{
+    font-size: 12px;  
+    font-weight: bolder;
+}
+
+
+
+.warning_length{
+    display: none;
+    color: red;
+    text-align: end;
+}
+
+.warning_confirm{
+    display: none;
+    color: red;
+    text-align: end;
+}
+
+.warning_email{
+    display: none;
+    color: red;
+    text-align: end;
+}
+
+.warning_username{
+    color: red;
+    text-align: end;
+}
+
+.terms_and_conditions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms_and_conditions label{
+    font-size: 15px;
+}
+
+.terms_and_conditions input{
+    size: 1px;
+    width: 11px;
+    height: 11px;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.submit button{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: bolder;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* .submit button:hover{
+    background-color: white;
+    color: black; 
+} */
+
+.submit button:active{
+    /* background-color: black;
+    color: white; */
+    background-color: white;
+    color: black; 
+}
+
